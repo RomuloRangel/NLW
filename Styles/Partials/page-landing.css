@@ -1,0 +1,86 @@
+:root{   
+    --color-background: #f0f0f7;
+     --color-primary-lighter: #9871f5;
+     --color-primary-light: #916bea;
+     --color-primary: #8257e5;
+     --color-primary-dark: #774dd6;
+     --color-primary-darker: #6842c2;
+     --color-secundary: #04d361;
+     --color-secundary-dark: #04bf58;
+     --color-title-in-primary: #ffffff;
+     --color-text-in-primary: #d4c2ff;
+     --color-text-title: #32264d;
+     --color-text-complement: #9c98a6;
+     --color-text-base: #6a6180;
+     --color-line-in-white: #e6e6f0;
+     --color-input-background: #f8f8fc;
+     --color-button-text: #ffffff;
+     --color-box-base: #ffffff;
+     --color-box-footer: #fafafc;
+     
+  font-size: 40%;
+}
+
+/*ID e CLASS sao puxadas no css com '#' ja as <div> sao puxadas com " . " */
+
+#page-landing{
+  
+  background: var(--color-primary);
+  
+}
+
+#page-landing #container {
+  color: var(--color-text-in-primary);
+  
+}
+
+.logo-container{
+  text-align: center;/*alinhamento dos itens da DIV logo-container.*/
+  margin-bottom: 3.2rem; /* Espacamentos entre os elementos da Div.*/
+}
+
+.logo-container img {  /*alteracoes feitas apenas na imagem*/
+  height: 10rem;
+}
+
+.logo-container h2 {    /*alteracoes apenas na tag h2*/
+
+font-weight: 500;/*peso da font*/
+font-size: 3.6rem;/*tamanho da font*/
+line-height: 4.6rem;/* altura da linha do texto*/
+margin-top: 0.8rem; /*destanciamento do topo do testo h2*/
+
+}
+
+
+.hero-img{
+  width: 100%;
+}
+
+/*Editando botoes*/
+
+.buttons-container { 
+  /* Alteracao para toda a Div*/
+  display: flex; /*permite que editemos a centralizacao dos botoes*/
+  justify-content: center;/* Alinha os itens da caixa ao centro*/
+/*  margin: 3.2rem 0;/*3.2 no topo e 0 nas laterais.*/
+}
+.buttons-container a { /* alterando a tag "a".*/
+  width: 30rem;
+  height: 10.4rem;
+  
+  border-radius: 0.8rem; /* Arredondamento das bordas*/
+  margin-right: 1.6rem;
+  
+  font: 700 2.4rem Archivo;/* 700=negrito , 2.4rem = altura, Archivo=font*/
+  
+  display: flex;
+  align-items: center;/*alinha horizontal dentro da propria tag*/
+  justify-content: center;/* alinha verticalmente*/
+  
+  text-decoration: none;/* tira a decoracao padrao do texto*/
+  
+  color: var(--color-button-text);
+  
+  
+}
