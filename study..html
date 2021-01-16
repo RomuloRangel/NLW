@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <title>Proffy | Sua plataforma de estudo online</title>
+    
+    <link rel="stylesheet" href="/Styles/Main.css" />
+    <link rel="stylesheet" href="/Styles/Partials/page-study.css"  />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Poppins:wght@100&display=swap" rel="stylesheet"> 
+    
+</head>
+
+<body id="page-study">
+  
+    <div id="container">
+      
+            <header class="page-header">
+              <div class="top-bar-container">
+                <a href="/Index.html">
+                  <img src="/Icons/back.svg" alt="Voltar">
+                  <img src="/Images/logo.svg" alt="Proffy">
+                </a>
+              </div>
+
+              <div class="header-content">
+                <strong>Esses são os proffys disponiveis.</strong>
+
+
+
+
+                <!-- <--TODOS OS BLOCOS DEVERAO ESTAR DENTRO DA TAG FORMS PARA QUE O FORMULARIO SEJA ENVIADO CORRETAMENTE--> -->
+                  
+                
+                <form id="search-teachers">                           <!--Criando formulario criar sempre uma ID para que saibamos nome para enviar para o back-end -->
+                  <div class="select-block">                          <!--Div criada para um bloco de seleção para cada bloco se cria uma Div para ficar mais organizado-->
+                    <label for="subject">Matéria</label>              <!--Nome do bloco de seleção(MATERIA) que ira chamar a Lista de Opcões, essa devera possuir o mesmo nome para evitar conflitos-->
+                    <select name="subject" id="subject">              <!--Nome da Lista e sua ID TODA ID TEM GRANDE IMPORTACIA NO BACK-END-->
+                      <option value="" disabled="" hidden="">Selecione uma Opção.</option>
+                      <option value="1">Artes</option>
+                      <option value="2">Biologia</option>
+                      <option value="3">Ciencias</option>
+                      <option value="4">Educação Física</option>
+                      <option value="5">Geografia</option>
+                      <option value="6">História</option>
+                      <option value="7">Matematica</option>
+                      <option value="8">Fisica</option>
+                      <option value="9">Portugues</option>
+                      <option value="10">Quimica</option>
+                    </select>
+                  </div>
+
+                  <div class="select-block">
+                    <label for="weekday">Dia da Semana</label>
+                    <select name="weekday" id="weekday">
+                      <option value="" disabled="" hidden="">Selecione uma Opção.</option>
+                      <option value="0">Domingo</option>
+                      <option value="1">Segunda</option>
+                      <option value="2">Terca</option>
+                      <option value="3">Quarta</option>
+                      <option value="4">Quinta</option>
+                      <option value="5">Sexta</option>
+                      <option value="6">Sábado</option>
+                    </select>
+                  </div>
+                  <div class="input-block">
+                    <label for="time">Hora</label>
+                    <input name="time" id="time" type="time">
+                  </div>
+                  <button type="submit">Filtrar</button><!--QUANDO UM BOTAÕ SUBMIT É CRIADO DENTRO DE UM FORMULARIO ELE É RESPOSAVEL POR MADAR TODOS OS DADOS DO FORMULARIO PARA O BACK-END.-->
+                </form>
+              </div>
+            </header>
+          
+                  
+  
+      
+    </div>
+
+</body>
+
+</html>
