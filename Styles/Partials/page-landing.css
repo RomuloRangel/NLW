@@ -64,10 +64,11 @@ margin-top: 0.8rem; /*destanciamento do topo do testo h2*/
   display: flex; /*permite que editemos a centralizacao dos botoes*/
   justify-content: center;/* Alinha os itens da caixa ao centro*/
 /*  margin: 3.2rem 0;/*3.2 no topo e 0 nas laterais.*/
+  margin-top: 4rem;
 }
 .buttons-container a { /* alterando a tag "a".*/
   width: 30rem;
-  height: 10.4rem;
+  height: 8rem;
   
   border-radius: 0.8rem; /* Arredondamento das bordas*/
   margin-right: 1.6rem;
@@ -82,5 +83,50 @@ margin-top: 0.8rem; /*destanciamento do topo do testo h2*/
   
   color: var(--color-button-text);
   
+  transition: background 0.2s;/* Tempo de transicao do botao*/
+
+
+
+}
+
+.buttons-container a.study:hover{/*estado no qual mouse sobre o botao*/
+background: var(--color-primary-light);
+
+}
+
+.buttons-container a.give-class:hover{
+  background: var(--color-secundary-dark);
+}
+
+.buttons-container a.study {
+  background: var(--color-primary-lighter);
   
+}
+
+.buttons-container a.give-class {
+  background: var(--color-secundary);
+  margin-right: 0;
+}
+.conection {
+  font-size: 1.8rem;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  margin-top: 3rem;
+}
+ .conection img{
+   margin-left: 1rem;
+   width: 2rem;
+ }
+ 
+ 
+
+   
+@media (min-width: 1100px){/*Define o minimo de configucao apos a reponsividade ou seja apos 1100 sera aplicada a versao desktope nao Mobile*/
+
+  #page-landing #container{/* Define o Maximo que a versao mobile ira que no caso sera ate 1100px*/
+    max-width: 1100px;
+  }
 }
